@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fastapi-demo"
+version = "0.1.0"
+description = ""
+authors = ["Nathan Segers <nathan.segers@howest.be>"]
+readme = "README.md"
+packages = [{include = "fastapi_demo_1"}, {include = "fastapi_demo_2"}, {include = "fastapi_demo_3"}, {include = "fastapi_demo_4"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.85.2"
+strawberry-graphql = {extras = ["debug-server"], version = "^0.138.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
